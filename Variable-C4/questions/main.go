@@ -36,7 +36,7 @@ func main() {
 	fmt.Printf("%2f is %f2f celcius\n",fahrenheit,celcius)
 
 
-	//Write another program that converts from feet into meters. ( 1 ft = 0.3048 m )
+//Write another program that converts from feet into meters. ( 1 ft = 0.3048 m )
 	
 var feet float64
 println("enter feet")

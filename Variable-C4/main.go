@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main (){
 	// var a string = "Apple"
 	// println(a)
@@ -39,6 +41,16 @@ is able to infer the type based on the literal value you
 assign the variable. (Since you are assigning a string
 literal, x is given the type string ) The compiler can
 also do inference with the var statement:*/
+
+
+fmt.Print("Enter a number: ")
+var input float64
+fmt.Scanf("%f", &input)
+output := input * 2
+fmt.Println(output)
+
+
+
 	 j := 5
 println (j)
 

@@ -28,6 +28,7 @@ slice1:= []int {1,2,3}
 slice2:= append(slice1, 4,5)
 fmt.Println(slice2)
 
-
+sli1:= [] int {1,2,3}
+sli2:= make()
 
 }

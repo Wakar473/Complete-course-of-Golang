@@ -1,0 +1,10 @@
+Q.1-What is heterogeneous and homogeneous?
+
+A truly heterogeneous collection is a data structure or collection 
+that can store and manage elements of different types simultaneously. 
+Unlike homogeneous collections (e.g., an array of integers or a slice of strings, 
+where all elements must be of the same type), heterogeneous collections can hold mixed types 
+such as integers, strings, booleans, custom structs, etc.
+
+
+Q.2-

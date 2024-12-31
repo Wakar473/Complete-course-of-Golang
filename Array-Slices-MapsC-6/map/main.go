@@ -43,6 +43,7 @@ func main() {
 	b[1] = 2
 	// We can also delete items from a map using the built-in delete function:
 	fmt.Println(b[1])
+	//========================================================================================================================
 
 	// Use Case: Jab aap map ko initialize karte waqt hi kuch values set karna chahte ho.
 	myMap := map[string]int{
@@ -52,6 +53,7 @@ func main() {
 	myMap["charlie"] = 30
 	delete(myMap, "Alice")
 	fmt.Println(myMap)
+	//========================================================================================================================
 
 	x := map[string]string{
 		"rahul": "4 year",
@@ -62,6 +64,7 @@ func main() {
 	x["rahul"] = "5 year"
 	x["amit"] = "10 year"
 	fmt.Println(x)
+	//========================================================================================================================
 
 	elements := map[string]string{
 		"H":  "Hydrogen",
@@ -87,6 +90,7 @@ func main() {
 	true: Key exist karti hai.
 	false: Key exist nahi karti.
 	*/
+	//========================================================================================================================
 
 	element := map[string]string{
 		"H":  "Hydrogen",
@@ -104,6 +108,7 @@ func main() {
 		Iska use tab hota hai jab aapko map me kisi key ki existence ko check karte hue uski
 		value retrieve karni ho, aur agar key exist nahi karti ho toh safe handling karni ho.
 	*/
+	//========================================================================================================================
 
 	ele := map[string]map[string]string{
 		"H": {
@@ -130,40 +135,37 @@ func main() {
 	*/
 
 	ele["H"]["atomicNumber"] = "1"
-fmt.Println(ele["H"]) // Output: map[name:Hydrogen state:Gas atomicNumber:1]
+	fmt.Println(ele["H"]) // Output: map[name:Hydrogen state:Gas atomicNumber:1]
 
 	// Aap nested map ke andar naye keys aur values dynamically add kar sakte ho:
 
+	//========================================================================================================================
 
-	
-    // Hierarchical structure using nested maps
-    organization := map[string]map[string]map[string]string{
-        "IT": {
-            "Emp1": {
-                "name": "Alice",
-                "age":  "30",
-            },
-            "Emp2": {
-                "name": "Bob",
-                "age":  "25",
-            },
-        },
-        "HR": {
-            "Emp1": {
-                "name": "Charlie",
-                "age":  "35",
-            },
-            "Emp2": {
-                "name": "Diana",
-                "age":  "28",
-            },
-        },
-    }
+	// Hierarchical structure using nested maps
+	organization := map[string]map[string]map[string]string{
+		"IT": {
+			"Emp1": {
+				"name": "Alice",
+				"age":  "30",
+			},
+			"Emp2": {
+				"name": "Bob",
+				"age":  "25",
+			},
+		},
+		"HR": {
+			"Emp1": {
+				"name": "Charlie",
+				"age":  "35",
+			},
+			"Emp2": {
+				"name": "Diana",
+				"age":  "28",
+			},
+		},
+	}
 
-    // Accessing hierarchical data
-    fmt.Println("IT Employee 1 Name:", organization["IT"]["Emp1"]["name"])
-    fmt.Println("HR Employee 2 Age:", organization["HR"]["Emp2"]["age"])
+	// Accessing hierarchical data
+	fmt.Println("IT Employee 1 Name:", organization["IT"]["Emp1"]["name"])
+	fmt.Println("HR Employee 2 Age:", organization["HR"]["Emp2"]["age"])
 }
-
-	
-

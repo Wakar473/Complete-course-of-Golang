@@ -7,4 +7,45 @@ where all elements must be of the same type), heterogeneous collections can hold
 such as integers, strings, booleans, custom structs, etc.
 
 
-Q.2-
+Q.2-How many sorting concept in golang?
+
+1)sort.Ints
+Sorts a slice of integers in ascending order.
+
+import "sort"
+x := []int{3, 1, 4, 1, 5, 9}
+sort.Ints(x) // Result: [1, 1, 3, 4, 5, 9]
+
+2)sort.Strings
+Sorts a slice of strings in ascending (lexicographical) order.
+
+x := []string{"banana", "apple", "cherry"}
+sort.Strings(x) // Result: ["apple", "banana", "cherry"]
+
+3)sort.Float64s
+Sorts a slice of floating-point numbers in ascending order.
+
+Sorting Method	                      Use Case	                           Built-in?
+
+sort.Ints	                          Sorting integers	                     ✅
+sort.Strings	                      Sorting strings	                     ✅
+sort.Float64s	                      Sorting floating-point numbers       	 ✅
+sort.Slice                         	  Custom sorting (e.g., structs)	     ✅
+sort.Interface	                      Custom and reusable complex sorting	 ✅
+sort.Reverse	                      Reverse order sorting	                 ✅
+
+Q.3 what is less and swap method in sort.Interface 
+
+Less ye decide karta hai ki do elements me se kaunsa pehle aana chahiye. 
+Agar true return karega to element i pehle aayega, nahi to j.
+
+func (a MyType) Less(i, j int) bool {
+    return a[i] < a[j] // agar a[i] chhota hai a[j] se, to i pehle aayega
+}
+
+Swap do elements ki position ko exchange karta hai. Matlab i wale element ko j par le jao aur j wale ko i par
+
+func (a MyType) Swap(i, j int) {
+    a[i], a[j] = a[j], a[i] // i aur j ki jagah badal do
+}
+

@@ -79,7 +79,7 @@ func main() {
 		3,
 		4,
 		// 5,
-		// After commenting '5' it will give output at element 5 index 4 zero because there is no value at index 4 and array of element[5]
+		// After commenting '5' it will give output at element 5 on index 4 is zero because there is no value at index 4 and array of element[5]
 	}
 	fmt.Println(f)
 }

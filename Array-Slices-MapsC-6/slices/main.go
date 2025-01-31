@@ -8,6 +8,8 @@ import (
 	"fmt"
 )
 
+// make([]type, length, capacity)
+
 func main() {
 	b := make([]float64, 4, 5) //The make function  allows a 3rd parameter:
 	a := make([]float64, 5)    //If you want to create a slice you should use the built-in make function:
@@ -16,8 +18,7 @@ func main() {
 	*/
 	fmt.Println(a, b)
 	// println(b)
-	// make([]type, length, capacity)
-	
+
 	// capacity (optional): The total size of the underlying array the slice can grow into.
 	// If you don’t specify the capacity, it defaults to the value of length.
 
@@ -37,8 +38,8 @@ func main() {
 	fmt.Println(slice2)
 	//========================================================================================================================
 
-	// sli1 := []int{1, 2, 3}
-	// sli2 := make()
-	// fmt.Println(sli1,sli2)
+	sli1 := []int{1, 2, 3}
+	sli2 := make([]int, 3,4)
+	fmt.Println(sli1,sli2)
 
 }
